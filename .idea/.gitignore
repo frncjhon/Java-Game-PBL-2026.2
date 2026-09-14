@@ -1,0 +1,10 @@
+# Arquivos ignorados padrão
+/shelf/
+/workspace.xml
+# Requisições de cliente HTTP baseadas no editor
+/httpRequests/
+# Pasta padrão ignorada com arquivos de consulta
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

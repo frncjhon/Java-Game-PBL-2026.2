@@ -52,6 +52,9 @@ public class Controladordejogo {
                 // Passa como parametros a informação que está no Estadodejogo.java
                 hud.HudStatus(
                         estado.confianca, estado.afinidadenpc1, estado.afinidadenpc2, estado.sanidade, estado.lideranca);
+
+                Capitulo capitulo = ConstrutorCapitulo.criarCapitulo(estado);
+                capitulo.exibirCapitulo();
             }
 
             // "Fecha" o jogo

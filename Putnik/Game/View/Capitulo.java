@@ -13,8 +13,18 @@ public class Capitulo {
         this.dialogos = new ArrayList<>();
     }
 
-    public void addDialogo(Dialogo dialogo){
-        this.dialogos.add(dialogo);
+    // Carrega a cena de uma vez
+    public Capitulo(String titulo, Dialogo[] cena) {
+        this.titulo = titulo;
+        this.dialogos = new ArrayList<>(List.of(cena));
+    }
+
+    public void adicionarCena(Dialogo[] cena) {
+        dialogos.addAll(List.of(cena));
+    }
+
+    public void adicionarDialogo(Dialogo dialogo) {
+        dialogos.add(dialogo);
     }
 
     public void exibirCapitulo(){
@@ -25,7 +35,7 @@ public class Capitulo {
         }
     }
     private void pressEnter(){
-        System.out.print("\nPressione ENTER para continuar...");
+        System.out.print("\n ENTER-->");
         try {
             System.in.read();
         } catch (Exception e) {

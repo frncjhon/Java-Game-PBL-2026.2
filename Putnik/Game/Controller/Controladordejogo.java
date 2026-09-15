@@ -53,8 +53,9 @@ public class Controladordejogo {
                 hud.HudStatus(
                         estado.confianca, estado.afinidadenpc1, estado.afinidadenpc2, estado.sanidade, estado.lideranca);
 
-                Capitulo capitulo = ConstrutorCapitulo.criarCapitulo(estado);
-                capitulo.exibirCapitulo();
+                // Inicia o capitulo
+                Capitulo cena1 = ConstrutorCapitulo.criarCena("Cena 1 - O Despertar", RepDialogo.cap1cen1);
+                cena1.exibirCapitulo();
             }
 
             // "Fecha" o jogo

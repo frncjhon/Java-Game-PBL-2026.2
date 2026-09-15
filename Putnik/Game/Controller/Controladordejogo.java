@@ -54,7 +54,17 @@ public class Controladordejogo {
                         estado.confianca, estado.afinidadenpc1, estado.afinidadenpc2, estado.sanidade, estado.lideranca);
 
                 // Inicia o capitulo
-                Capitulo cena1 = ConstrutorCapitulo.criarCena("Cena 1 - O Despertar", RepDialogo.cap1cen1);
+                Capitulo cena1 = ConstrutorCapitulo.criarCena("Cena 1 - O DESPERTAR", RepDialogo.cap1cen1);
+                cena1.exibirCapitulo();
+                Capitulo cena2 = ConstrutorCapitulo.criarCena("Cena 1 - O SILÊNCIO", RepDialogo.cap1cen2);
+                cena1.exibirCapitulo();
+                Capitulo cena3 = ConstrutorCapitulo.criarCena("Cena 1 - O ENCONTRO", RepDialogo.cap1cen3);
+                cena1.exibirCapitulo();
+                Capitulo cena4 = ConstrutorCapitulo.criarCena("Cena 1 - OS REGISTROS", RepDialogo.cap1cen4);
+                cena1.exibirCapitulo();
+                Capitulo cena5 = ConstrutorCapitulo.criarCena("Cena 1 - O TERCEIRO PERDIDO", RepDialogo.cap1cen5);
+                cena1.exibirCapitulo();
+                Capitulo cena6 = ConstrutorCapitulo.criarCena("Cena 1 - A PRIMEIRA NOITE", RepDialogo.cap1cen6);
                 cena1.exibirCapitulo();
             }
 

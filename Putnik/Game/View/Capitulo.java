@@ -35,7 +35,7 @@ public class Capitulo {
         }
     }
     private void pressEnter(){
-        System.out.print("\n ENTER-->");
+        System.out.print("\n");
         try {
             System.in.read();
         } catch (Exception e) {

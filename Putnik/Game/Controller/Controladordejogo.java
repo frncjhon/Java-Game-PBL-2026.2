@@ -79,6 +79,20 @@ public class Controladordejogo {
                 Opcao resultado = escolha1.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Examinar os escombros ao redor")) {
+                    System.out.println(
+                            "\nSerj examina os escombros ao redor e encontra uma pequena abertura entre os destroços."
+                    );
+                }
+
+                if (resultado.getTexto().equals("Levantar-se e procurar uma saída")) {
+                    System.out.println(
+                            "\nSerj se levanta e procura uma saída entre os escombros. "
+                                    + "Depois de alguns instantes, encontra uma passagem para fora."
+                    );
+                }
+
+
                 Capitulo cena2 = ConstrutorCapitulo.criarCena(
                         "Cena 2 - O SILÊNCIO", RepDialogo.cap1cen2);
                 cena2.exibirCapitulo();
@@ -97,6 +111,13 @@ public class Controladordejogo {
 
                 resultado = escolha2.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
+
+                if (resultado.getTexto().equals("Ignorar a voz")) {
+                    System.out.println(
+                            "\nSerj decide ignorar a voz e permanece ao lado de Ibis. "
+                                    + "Os dois continuam pelo corredor."
+                    );
+                }
 
                 if (resultado.getTexto().equals("Procurar a origem da voz")) {
                     System.out.println(
@@ -125,6 +146,12 @@ public class Controladordejogo {
                 resultado = escolha3.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Levar o mapa e seguir em frente")) {
+                    System.out.println(
+                            "\nSerj guarda o mapa e decide que o melhor caminho é seguir em frente."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Vasculhar mais arquivos")) {
                     System.out.println(
                             "\nSerj continua procurando por mais informações, mas os arquivos restantes "
@@ -132,6 +159,7 @@ public class Controladordejogo {
                                     + "ele guarda o que encontrou e segue com Ibis."
                     );
                 }
+
 
                 Capitulo cena4 = ConstrutorCapitulo.criarCena(
                         "Cena 4 - TRÊS CAMINHOS", RepDialogo.cap1cen4);
@@ -151,6 +179,12 @@ public class Controladordejogo {
 
                 resultado = escolha4.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
+
+                if (resultado.getTexto().equals("Serj assume a liderança")) {
+                    System.out.println(
+                            "\nSerj assume a frente do grupo e decide que os dois seguirão em direção à torre."
+                    );
+                }
 
                 if (resultado.getTexto().equals("Deixar Ibis decidir")) {
                     System.out.println(
@@ -187,12 +221,20 @@ public class Controladordejogo {
                 resultado = escolha5.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Mostrar a Ibis o jornal mais antigo")) {
+                    System.out.println(
+                            "\nSerj mostra o jornal para Ibis. "
+                                    + "Os dois percebem que os desaparecimentos acontecem há décadas."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Esconder o jornal e continuar")) {
                     System.out.println(
                             "\nSerj guarda o jornal sem mostrar a Ibis. "
-                                    + "Os dois continuam pela avenida, levando consigo apenas as informações que já possuem."
+                                    + "Os dois continuam pela avenida levando consigo apenas as informações que já possuem."
                     );
                 }
+
 
                 Capitulo cena6 = ConstrutorCapitulo.criarCena(
                         "Cena 2 - O HOMEM DA JANELA", RepDialogo.cap2cen2);
@@ -213,12 +255,19 @@ public class Controladordejogo {
                 resultado = escolha6.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Confiar no aviso de Mikhail")) {
+                    System.out.println(
+                            "\nSerj decide levar o aviso de Mikhail a sério e guarda a chave com cuidado."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Desconfiar de Mikhail")) {
                     System.out.println(
                             "\nSerj não aceita o aviso de imediato. "
                                     + "Mesmo desconfiado, ele decide guardar a chave e continuar com Ibis."
                     );
                 }
+
 
                 Capitulo cena7 = ConstrutorCapitulo.criarCena(
                         "Cena 3 - A REGRA DO ECO", RepDialogo.cap2cen3);
@@ -238,6 +287,12 @@ public class Controladordejogo {
                 resultado = escolha7.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Seguir Ibis e abandonar a porta")) {
+                    System.out.println(
+                            "\nSerj decide confiar no aviso e acompanha Ibis para fora da sala."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Tentar abrir a porta mesmo assim")) {
                     System.out.println(
                             "\nSerj tenta usar a chave, mas as três batidas ecoam novamente pelo corredor. "
@@ -245,6 +300,7 @@ public class Controladordejogo {
                                     + "ele recua e segue Ibis."
                     );
                 }
+
 
                 Capitulo cena8 = ConstrutorCapitulo.criarCena(
                         "Cena 4 - O SINAL", RepDialogo.cap2cen4);
@@ -266,10 +322,17 @@ public class Controladordejogo {
                 resultado = escolha8.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Aceitar a ajuda de Deyv")) {
+                    System.out.println(
+                            "\nSerj aceita a ajuda de Deyv. "
+                                    + "Os três passam a seguir juntos em direção à estação."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Exigir respostas antes de seguir")) {
                     System.out.println(
                             "\nSerj exige explicações antes de aceitar Deyv no grupo. "
-                                    + "Depois de um breve silêncio, Deyv apenas aponta para a direção da estação. "
+                                    + "Depois de um breve silêncio, Deyv aponta para a direção da estação. "
                                     + "Sem tempo para discutir, os três seguem juntos."
                     );
                 }
@@ -304,12 +367,19 @@ public class Controladordejogo {
                 resultado = escolha9.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Entrar com Ibis primeiro")) {
+                    System.out.println(
+                            "\nSerj entra no trem junto com Ibis e os dois escolhem um dos assentos iluminados."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Mandar Deyv entrar primeiro")) {
                     System.out.println(
                             "\nDeyv entra no trem primeiro e espera por alguns segundos. "
                                     + "Como nada acontece, ele faz um sinal para Serj e Ibis entrarem também."
                     );
                 }
+
 
                 Capitulo cena10 = ConstrutorCapitulo.criarCena(
                         "Cena 2 - MEMÓRIAS QUE NÃO PERTENCEM", RepDialogo.cap3cen2);
@@ -329,12 +399,19 @@ public class Controladordejogo {
                 resultado = escolha10.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
-                if (resultado.getTexto().equals("Perguntar a Deyv sobre a visão")) {
+                if (resultado.getTexto().equals("Reforçar Ibis e afastá-lo da janela")) {
                     System.out.println(
-                            "\nDeyv evita responder de imediato. "
-                                    + "Antes que Serj consiga insistir, a visão desaparece e o trem continua avançando."
+                            "\nSerj afasta Ibis da janela e pede para que ele não continue olhando para as visões."
                     );
                 }
+
+                if (resultado.getTexto().equals("Perguntar a Deyv sobre a visão")) {
+                    System.out.println(
+                            "\nSerj pergunta a Deyv sobre aquilo que viu. "
+                                    + "Deyv evita responder de imediato, mas a visão desaparece antes que ele consiga explicar."
+                    );
+                }
+
 
                 Capitulo cena11 = ConstrutorCapitulo.criarCena(
                         "Cena 3 - O NOME ESCRITO", RepDialogo.cap3cen3);
@@ -355,12 +432,20 @@ public class Controladordejogo {
                 resultado = escolha11.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Contar imediatamente a Ibis")) {
+                    System.out.println(
+                            "\nSerj conta imediatamente a Ibis sobre o nome de Mikhail. "
+                                    + "Os dois ficam em silêncio por alguns segundos."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Guardar a informação por enquanto")) {
                     System.out.println(
                             "\nSerj decide não contar tudo naquele momento. "
                                     + "Ele guarda a informação para si enquanto os três continuam procurando uma saída."
                     );
                 }
+
 
                 Capitulo cena12 = ConstrutorCapitulo.criarCena(
                         "Cena 4 - A FALSA SAÍDA", RepDialogo.cap3cen4);
@@ -382,10 +467,16 @@ public class Controladordejogo {
                 resultado = escolha12.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Acreditar em Mikhail")) {
+                    System.out.println(
+                            "\nSerj decide confiar no aviso de Mikhail e permanece diante da passagem."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Acreditar na falsa saída")) {
                     System.out.println(
-                            "\nSerj se aproxima da porta, mas Mikhail percebe o perigo antes que ele atravesse. "
-                                    + "A falsa saída desaparece diante deles, obrigando o grupo a continuar pela estação."
+                            "\nSerj se aproxima da porta, mas percebe tarde demais que algo está errado. "
+                                    + "A passagem desaparece diante deles, obrigando o grupo a continuar."
                     );
                 }
 
@@ -419,12 +510,19 @@ public class Controladordejogo {
                 resultado = escolha13.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Manter o grupo unido e seguir Elena")) {
+                    System.out.println(
+                            "\nSerj mantém Ibis e Deyv juntos e decide seguir Elena pelos corredores subterrâneos."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Separar o grupo para investigar")) {
                     System.out.println(
                             "\nO grupo se separa por alguns instantes, mas os corredores parecem mudar de lugar. "
                                     + "Percebendo o risco, Serj chama Ibis e Deyv e os três voltam a seguir juntos."
                     );
                 }
+
 
                 Capitulo cena14 = ConstrutorCapitulo.criarCena(
                         "Cena 2 - O PREÇO", RepDialogo.cap4cen2);
@@ -445,12 +543,20 @@ public class Controladordejogo {
                 resultado = escolha14.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
-                if (resultado.getTexto().equals("Pressionar Deyv por respostas")) {
+                if (resultado.getTexto().equals("Perguntar a Elena como evitar o sacrifício")) {
                     System.out.println(
-                            "\nSerj pressiona Deyv por respostas. Deyv permanece em silêncio por alguns segundos, "
-                                    + "mas depois decide revelar apenas o suficiente para que o grupo continue."
+                            "\nSerj pergunta a Elena como evitar o sacrifício. "
+                                    + "Ela explica que a resposta está ligada à própria prisão."
                     );
                 }
+
+                if (resultado.getTexto().equals("Pressionar Deyv por respostas")) {
+                    System.out.println(
+                            "\nSerj pressiona Deyv por respostas. "
+                                    + "Depois de alguns segundos de silêncio, Deyv decide revelar apenas o necessário."
+                    );
+                }
+
 
                 Capitulo cena15 = ConstrutorCapitulo.criarCena(
                         "Cena 3 - A VERDADE DE DEYV", RepDialogo.cap4cen3);
@@ -472,12 +578,20 @@ public class Controladordejogo {
                 resultado = escolha15.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Perdoar Deyv e continuar ouvindo")) {
+                    System.out.println(
+                            "\nSerj decide ouvir Deyv até o fim. "
+                                    + "A revelação deixa os três ainda mais próximos da verdade sobre a prisão."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Afastar Deyv do grupo")) {
                     System.out.println(
                             "\nSerj decide manter Deyv afastado por enquanto. "
                                     + "Mesmo assim, Deyv continua seguindo o grupo de longe, pois também conhece o caminho para o centro."
                     );
                 }
+
 
                 Capitulo cena16 = ConstrutorCapitulo.criarCena(
                         "Cena 4 - O RELÓGIO", RepDialogo.cap4cen4);
@@ -497,6 +611,12 @@ public class Controladordejogo {
 
                 resultado = escolha16.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
+
+                if (resultado.getTexto().equals("Segurar Ibis e Deyv juntos")) {
+                    System.out.println(
+                            "\nSerj mantém Ibis e Deyv próximos e os três se preparam para descer juntos."
+                    );
+                }
 
                 if (resultado.getTexto().equals("Descer primeiro e assumir o risco")) {
                     System.out.println(
@@ -538,6 +658,20 @@ public class Controladordejogo {
                 resultado = escolha17.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Avançar junto com Ibis")) {
+                    System.out.println(
+                            "\nSerj escolhe seguir ao lado de Ibis. "
+                                    + "Os dois avançam juntos enquanto Deyv permanece próximo."
+                    );
+                }
+
+                if (resultado.getTexto().equals("Avançar junto com Deyv")) {
+                    System.out.println(
+                            "\nSerj decide avançar ao lado de Deyv. "
+                                    + "Os dois seguem pelo caminho enquanto Ibis os acompanha."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Avançar sozinho")) {
                     System.out.println(
                             "\nSerj segue sozinho por alguns metros. "
@@ -545,6 +679,7 @@ public class Controladordejogo {
                                     + "Ele retorna para junto deles."
                     );
                 }
+
 
                 Capitulo cena18 = ConstrutorCapitulo.criarCena(
                         "Cena 2 - O CENTRO", RepDialogo.cap5cen2);
@@ -566,10 +701,18 @@ public class Controladordejogo {
 
                 if (resultado.getTexto().equals("Exigir outra solução")) {
                     System.out.println(
-                            "\nSerj insiste que deve existir outra possibilidade. "
-                                    + "A voz permanece em silêncio por alguns instantes, mas a passagem continua aberta diante dos três."
+                            "\nSerj exige que exista outra possibilidade. "
+                                    + "A voz permanece em silêncio enquanto os três observam a passagem."
                     );
                 }
+
+                if (resultado.getTexto().equals("Perguntar o que acontece com quem fica")) {
+                    System.out.println(
+                            "\nSerj pergunta o que acontecerá com aquele que permanecer. "
+                                    + "A resposta da voz deixa claro que a permanência é algo diferente da morte."
+                    );
+                }
+
 
                 Capitulo cena19 = ConstrutorCapitulo.criarCena(
                         "Cena 3 - A ESCOLHA", RepDialogo.cap5cen3);
@@ -618,6 +761,7 @@ public class Controladordejogo {
                     );
                 }
 
+
                 Capitulo cena20 = ConstrutorCapitulo.criarCena(
                         "Cena 4 - O ÚLTIMO PASSAGEIRO", RepDialogo.cap5cen4);
                 cena20.exibirCapitulo();
@@ -638,10 +782,17 @@ public class Controladordejogo {
                 resultado = escolha20.exibirEscolha(scanner, estado);
                 System.out.println("\nVocê escolheu: " + resultado.getTexto());
 
+                if (resultado.getTexto().equals("Confiar nos laços que construiu")) {
+                    System.out.println(
+                            "\nSerj olha para Ibis e Deyv. "
+                                    + "Independentemente do que aconteça, decide confiar nos laços que construiu com os dois."
+                    );
+                }
+
                 if (resultado.getTexto().equals("Assumir sozinho a responsabilidade")) {
                     System.out.println(
                             "\nSerj decide carregar sozinho o peso da decisão. "
-                                    + "Mesmo assim, percebe que ainda precisa lidar com as consequências junto de Ibis e Deyv."
+                                    + "Mesmo assim, sabe que suas escolhas afetaram os dois que chegaram até ali com ele."
                     );
                 }
 

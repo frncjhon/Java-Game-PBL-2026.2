@@ -15,7 +15,7 @@ public class Escolha {
 
     public Escolha adicionarOpcao(String texto, java.util.function.Consumer<Estadodejogo> efeito) {
         opcoes.add(new Opcao(texto, efeito));
-        return this; // encadeia .adicionarOpcao()....
+        return this;
     }
 
     public Opcao exibirEscolha(Scanner scanner, Estadodejogo estado) {
@@ -26,18 +26,25 @@ public class Escolha {
         }
 
         int selecionada = -1;
-        while (selecionada < 1 || selecionada >= opcoes.size()) {
+
+        while (selecionada < 1 || selecionada > opcoes.size()) {
             System.out.print("> ");
+
             try {
                 selecionada = Integer.parseInt(scanner.nextLine().trim());
+
+                if (selecionada < 1 || selecionada > opcoes.size()) {
+                    System.out.println("Opção inválida. Tente novamente.");
+                }
+
             } catch (NumberFormatException e) {
                 System.out.println("Opção inválida. Tente novamente.");
             }
         }
 
-            Opcao escolhida = opcoes.get(selecionada - 1);
-            escolhida.aplicarEfeito(estado);
-            return escolhida;
+        Opcao escolhida = opcoes.get(selecionada - 1);
+        escolhida.aplicarEfeito(estado);
 
-        }
+        return escolhida;
     }
+}

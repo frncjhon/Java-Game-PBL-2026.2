@@ -152,21 +152,25 @@ public class Controladordejogo {
             if (estado.afinidadenpc1 > estado.afinidadenpc2){
                 Capitulo Final = ConstrutorCapitulo.criarCena(
                         "Final", RepDialogo.final1);
+                Final.exibirCapitulo();
             }
-            if (estado.afinidadenpc2 > estado.afinidadenpc1) {
+            else if (estado.afinidadenpc2 > estado.afinidadenpc1) {
                 Capitulo Final = ConstrutorCapitulo.criarCena(
                         "Final", RepDialogo.final2);
+                Final.exibirCapitulo();
             }
 
 
             // Ainda não definido como os status serão incrementados então deixei o molde pronto.]
             // Mas a ideia é verificar se os status estão baixos
-            if (estado.lideranca == 0 && estado.confianca == 0 && estado.sanidade == 0) {
+            else if (estado.lideranca == 0 && estado.confianca == 0 && estado.sanidade == 0) {
                 Capitulo Final = ConstrutorCapitulo.criarCena(
                         "Final", RepDialogo.final3);
+                Final.exibirCapitulo();
             }
             // não foi implementado o final secreto.
 
+            executando = false;
 
 
 

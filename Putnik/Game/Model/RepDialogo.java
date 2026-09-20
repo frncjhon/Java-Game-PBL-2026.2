@@ -1,0 +1,573 @@
+package Model;
+import Model.Dialogo;
+
+public class RepDialogo {
+
+    // =========================================================
+    // CAPÍTULO 1 - CENA 1
+    // O DESPERTAR
+    // =========================================================
+
+    public static Dialogo[] cap1cen1 = {
+            new Dialogo("CAPÍTULO 1"),
+
+            new Dialogo("NARRADOR", "Serj desperta com a sensação de que alguma coisa havia mudado. " +
+                    "Não havia barulho de carros, vento, televisão ou qualquer som vindo das casas vizinhas.\n" +
+                    "\nEle abre os olhos lentamente. O teto de seu quarto não está mais ali."),
+            new Dialogo("SERJ", "...Onde eu estou?"),
+            new Dialogo("NARRADOR", "Pedaços de concreto cercam seu corpo. " +
+                    "Acima dele, existe apenas um céu cinzento, quase sem estrelas. O ar cheira a poeira e metal molhado."),
+            new Dialogo("SERJ", "Eu estava em casa. Eu tenho certeza disso."),
+            new Dialogo("NARRADOR", "Ao tentar se levantar, Serj percebe que não está ferido. " +
+                    "Seu relógio continua funcionando. 03:17. 03:18. 03:19.\n" +
+                    "\nEntão, do outro lado dos escombros, uma voz conhecida surge.")
+    };
+
+    // =========================================================
+    // CAPÍTULO 1 - CENA 2
+    // O SILÊNCIO
+    // =========================================================
+
+    public static Dialogo[] cap1cen2 = {
+
+            new Dialogo("IBIS", "Serj?"),
+            new Dialogo("SERJ", "Ibis?!"),
+            new Dialogo("NARRADOR", "Ibis surge por trás de uma parede caída, coberto de poeira. " +
+                    "Ele parece tão confuso quanto Serj."),
+            new Dialogo("IBIS", "Eu acordei aqui também. Não consigo lembrar como cheguei."),
+            new Dialogo("SERJ", "Tem mais alguém? Você ouviu alguma coisa?"),
+            new Dialogo("IBIS", "Nada. Nem carros. Nem animais. Nem pessoas. É como se a cidade inteira tivesse parado."),
+            new Dialogo("NARRADOR", "Os dois caminham pelo que restou do prédio. " +
+                    "Não encontram documentos, telefones funcionando ou qualquer sinal de outra pessoa.\n" +
+                    "\nEm uma sala quase intacta, Serj encontra uma mochila velha. " +
+                    "Dentro dela existe uma lanterna fraca, duas garrafas de água e um pequeno papel dobrado."),
+            new Dialogo("SERJ", "Tem alguma coisa escrita aqui."),
+            new Dialogo("IBIS", "Lê."),
+            new Dialogo("SERJ", "\"Não siga vozes que chamarem pelo seu nome.\""),
+            new Dialogo("IBIS", "Isso não parece muito acolhedor."),
+            new Dialogo("NARRADOR", "Antes que Serj possa responder, uma voz distante chama por ele. Exatamente com sua própria voz.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Ignorar a voz e continuar com Ibis — afinidadeP1 +5, confiança +2, resistênciaMental +1.
+    // Escolha B: Procurar a origem da voz — liderança +2, confiança -1, resistênciaMental -2.
+
+    // =========================================================
+    // CAPÍTULO 1 - CENA 3
+    // O PRIMEIRO REGISTRO
+    // =========================================================
+
+    public static Dialogo[] cap1cen3 = {
+
+            new Dialogo("NARRADOR", "A voz desaparece. Serj e Ibis seguem por um corredor coberto de poeira até encontrar uma porta de metal.\n" +
+                    "\nAtrás dela existe uma pequena sala de arquivo. " +
+                    "Pastas antigas estão espalhadas pelo chão, todas com datas diferentes. " +
+                    "Algumas são de 2006. Outras são muito mais antigas."),
+            new Dialogo("IBIS", "Por que alguém guardaria isso aqui?"),
+            new Dialogo("SERJ", "Talvez já tenham trazido outras pessoas para este lugar."),
+            new Dialogo("IBIS", "Você está dizendo que isso já aconteceu antes?"),
+            new Dialogo("NARRADOR", "Serj abre uma das pastas. " +
+                    "O documento relata que algumas pessoas acordaram no mesmo local, sempre sem saber como chegaram ali. " +
+                    "Em quase todas as páginas aparece a mesma expressão: \"prisão universal\"."),
+            new Dialogo("SERJ", "Prisão universal..."),
+            new Dialogo("IBIS", "Isso parece uma teoria de alguém desesperado."),
+            new Dialogo("NARRADOR", "No fim da pasta existe um mapa desenhado à mão. " +
+                    "Três locais estão marcados: uma torre, uma estação e uma construção subterrânea."),
+            new Dialogo("SERJ", "A torre parece estar mais perto."),
+            new Dialogo("IBIS", "Então vamos para lá. Não gosto de ficar aqui."),
+            new Dialogo("NARRADOR", "Quando saem da sala, eles percebem um terceiro conjunto de pegadas na poeira. " +
+                    "As marcas começam perto do arquivo e seguem para a saída."),
+            new Dialogo("SERJ", "Nós não estávamos sozinhos.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Levar o mapa e seguir em frente — liderança +2, confiança +1.
+    // Escolha B: Vasculhar mais arquivos — resistênciaMental -1, confiança +2, liderança +1.
+
+    // =========================================================
+    // CAPÍTULO 1 - CENA 4
+    // TRÊS CAMINHOS
+    // =========================================================
+
+    public static Dialogo[] cap1cen4 = {
+
+            new Dialogo("NARRADOR", "Do lado de fora, a cidade parece abandonada. " +
+                    "Prédios inteiros estão cobertos por uma névoa baixa. " +
+                    "Não há carros, postes acesos ou qualquer movimento nas janelas."),
+            new Dialogo("IBIS", "Serj... olha aquilo."),
+            new Dialogo("NARRADOR", "Em uma parede, três símbolos foram desenhados em tinta preta. " +
+                    "Um círculo, uma linha vertical e uma pequena porta."),
+            new Dialogo("SERJ", "Os mesmos símbolos do mapa."),
+            new Dialogo("IBIS", "Então alguém deixou um caminho para nós."),
+            new Dialogo("SERJ", "Ou alguém quer que a gente siga esse caminho."),
+            new Dialogo("NARRADOR", "Ibis olha para Serj em silêncio. " +
+                    "Pela primeira vez, os dois percebem que não estão apenas tentando encontrar uma saída. " +
+                    "Estão tentando descobrir quem está guiando cada passo."),
+            new Dialogo("IBIS", "Vamos juntos. Não importa o que tenha lá."),
+            new Dialogo("SERJ", "Juntos."),
+            new Dialogo("NARRADOR", "Ao longe, uma luz se acende no topo da torre marcada no mapa."),
+            new Dialogo("NARRADOR", "E alguém, em algum lugar, observa os dois se aproximarem.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Serj assume a liderança — liderança +3, afinidadeP1 +2.
+    // Escolha B: Deixar Ibis decidir — afinidadeP1 +4, carisma +2, liderança -1.
+    // escolha para item
+    // Item 01: Amuleto de cobre — resistênciaMental +2.
+    // Item 02: Caderno queimado — confiança +2.
+
+    // =========================================================
+    // CAPÍTULO 2 - CENA 1
+    // A CIDADE SEM CÉU
+    // =========================================================
+
+    public static Dialogo[] cap2cen1 = {
+
+            new Dialogo("CAPÍTULO 2"),
+
+            new Dialogo("NARRADOR", "[CAPÍTULO 2]\n\nA caminhada até a torre dura horas. " +
+                    "O estranho é que o céu nunca muda. Não amanhece, não escurece, e o relógio de Serj continua preso às 03:19."),
+            new Dialogo("IBIS", "Meu celular morreu há uma hora."),
+            new Dialogo("SERJ", "O meu também. O relógio não."),
+            new Dialogo("NARRADOR", "Em uma avenida vazia, encontram vitrines cobertas de jornais. " +
+                    "Todas as manchetes falam de desaparecimentos ocorridos em anos diferentes."),
+            new Dialogo("IBIS", "Tem pessoas de 1988, 1997... até de 2004."),
+            new Dialogo("SERJ", "E todos desapareceram na mesma madrugada."),
+            new Dialogo("NARRADOR", "Uma folha se desprende do vidro e pousa aos pés de Serj. " +
+                    "Atrás dela, há uma frase escrita à mão: \"A cidade não existe para ser habitada. Existe para ser lembrada.\""),
+            new Dialogo("IBIS", "Quem escreveu isso sabia que nós viríamos."),
+            new Dialogo("SERJ", "Ou sabia que sempre viria alguém.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Mostrar a Ibis o jornal mais antigo — afinidadeP1 +4, carisma +1.
+    // Escolha B: Esconder o jornal e continuar — liderança +2, confiança -1.
+
+    // =========================================================
+    // CAPÍTULO 2 - CENA 2
+    // O HOMEM DA JANELA
+    // =========================================================
+
+    public static Dialogo[] cap2cen2 = {
+
+            new Dialogo("NARRADOR", "Na base da torre, uma janela se abre sozinha no terceiro andar. Um homem observa Serj e Ibis de longe."),
+            new Dialogo("MIKHAIL", "Se pretendem entrar, não levem nada que encontrem no primeiro andar."),
+            new Dialogo("IBIS", "Quem é você?"),
+            new Dialogo("MIKHAIL", "Mikhail. Estou aqui há tempo suficiente para aprender algumas regras."),
+            new Dialogo("SERJ", "Quanto tempo?"),
+            new Dialogo("MIKHAIL", "Tempo demais para continuar contando."),
+            new Dialogo("NARRADOR", "Mikhail desce por uma escada lateral e entrega a Serj uma pequena chave enferrujada."),
+            new Dialogo("MIKHAIL", "No quinto andar existe uma porta que só abre quando o relógio parar. Quando isso acontecer, não olhem para trás."),
+            new Dialogo("IBIS", "E por que deveríamos confiar em você?"),
+            new Dialogo("MIKHAIL", "Não deveriam. Mas também não deveriam ignorar um aviso gratuito."),
+            new Dialogo("NARRADOR", "Mikhail se afasta antes de responder outras perguntas. Serj percebe que ele manca de uma das pernas."),
+            new Dialogo("MIKHAIL", "Se ouvirem três batidas na parede, saiam da torre. Não importa onde estiverem.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Confiar no aviso de Mikhail — confiança +3, liderança +1.
+    // Escolha B: Desconfiar de Mikhail — liderança +2, confiança -2.
+
+    // =========================================================
+    // CAPÍTULO 2 - CENA 3
+    // A REGRA DO ECO
+    // =========================================================
+
+    public static Dialogo[] cap2cen3 = {
+
+            new Dialogo("NARRADOR", "No quinto andar, Serj encontra uma sala circular. Nas paredes existem dezenas de nomes escritos." +
+                    " Alguns são familiares. Outros pertencem a pessoas que ainda nem nasceram."),
+            new Dialogo("IBIS", "Meu nome está ali."),
+            new Dialogo("SERJ", "O meu também."),
+            new Dialogo("NARRADOR", "Um som ecoa pelo corredor. Três batidas.\n\nTOC. TOC. TOC."),
+            new Dialogo("IBIS", "Mikhail disse para sair."),
+            new Dialogo("SERJ", "A porta está aqui. Se a chave funcionar, talvez seja o que ele queria."),
+            new Dialogo("NARRADOR", "Serj coloca a chave na fechadura. Antes de girá-la, escuta uma segunda versão de sua própria voz vindo do corredor."),
+            new Dialogo("VOZ", "Serj, não abra."),
+            new Dialogo("IBIS", "É a sua voz."),
+            new Dialogo("SERJ", "Eu sei."),
+            new Dialogo("NARRADOR", "Os dois saem da sala. Atrás deles, a porta se fecha sozinha. " +
+                    "Quando olham novamente para a parede, o nome de Ibis desapareceu.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Seguir Ibis e abandonar a porta — afinidadeP1 +5, resistênciaMental +1.
+    // Escolha B: Tentar abrir a porta mesmo assim — liderança +2, confiança +1, resistênciaMental -3.
+
+    // =========================================================
+    // CAPÍTULO 2 - CENA 4
+    // O SINAL
+    // =========================================================
+
+    public static Dialogo[] cap2cen4 = {
+
+            new Dialogo("NARRADOR", "De volta à rua, um rádio antigo começa a funcionar sozinho em uma loja vazia. " +
+                    "A transmissão é curta e cheia de ruído."),
+            new Dialogo("RÁDIO", "...três sobreviventes... um deles não deveria ter atravessado... a estação ainda aceita passageiros..."),
+            new Dialogo("IBIS", "Três sobreviventes? Nós somos três?"),
+            new Dialogo("SERJ", "Ainda não."),
+            new Dialogo("NARRADOR", "Um homem surge no fim da avenida. Ele carrega uma mochila e se apresenta sem demonstrar surpresa ao encontrar Serj e Ibis."),
+            new Dialogo("DEYV", "Vocês demoraram."),
+            new Dialogo("IBIS", "Nós nos conhecemos?"),
+            new Dialogo("DEYV", "Não pessoalmente. Mas eu já li sobre vocês."),
+            new Dialogo("SERJ", "Onde?"),
+            new Dialogo("DEYV", "Nos registros da estação. Ela guarda nomes antes de guardar pessoas."),
+            new Dialogo("NARRADOR", "Deyv olha para a torre atrás deles e sorri de forma quase imperceptível."),
+            new Dialogo("DEYV", "Se querem uma saída, precisam chegar até a estação antes que o relógio marque 04:00.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Aceitar a ajuda de Deyv — afinidadeP2 +5, confiança +2, carisma +1.
+    // Escolha B: Exigir respostas antes de seguir — liderança +2, afinidadeP2 -1, confiança +1.
+    // escolha para item
+    // Item 03: Relógio parado — resistênciaMental +1, confiança +2.
+    // Item 04: Fita cassete sem rótulo — carisma +1, resistênciaMental +1.
+
+    // =========================================================
+    // CAPÍTULO 3 - CENA 1
+    // A ESTAÇÃO
+    // =========================================================
+
+    public static Dialogo[] cap3cen1 = {
+
+            new Dialogo("CAPÍTULO 3"),
+
+            new Dialogo("NARRADOR", "A estação surge depois de uma caminhada por ruas cada vez mais estreitas. " +
+                    "Não há trilhos, mas existe uma plataforma completa, iluminada por lâmpadas antigas."),
+            new Dialogo("DEYV", "Chegamos."),
+            new Dialogo("IBIS", "Você já esteve aqui?"),
+            new Dialogo("DEYV", "Uma vez."),
+            new Dialogo("SERJ", "E conseguiu sair?"),
+            new Dialogo("DEYV", "Não."),
+            new Dialogo("NARRADOR", "Deyv entrega a Serj um bilhete de trem com a data 20.05.2006. " +
+                    "No verso, alguém escreveu: \"Um passageiro precisa ficar.\""),
+            new Dialogo("IBIS", "Isso não significa que um de nós precisa morrer, certo?"),
+            new Dialogo("DEYV", "Eu não disse isso."),
+            new Dialogo("NARRADOR", "Um trem sem maquinista chega à plataforma. As portas se abrem. " +
+                    "Lá dentro, três assentos estão iluminados e um quarto permanece completamente escuro.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Entrar com Ibis primeiro — afinidadeP1 +4, confiança +1.
+    // Escolha B: Mandar Deyv entrar primeiro — afinidadeP2 -2, liderança +2, confiança +1.
+
+    // =========================================================
+    // CAPÍTULO 3 - CENA 2
+    // MEMÓRIAS QUE NÃO PERTENCEM
+    // =========================================================
+
+    public static Dialogo[] cap3cen2 = {
+
+            new Dialogo("NARRADOR", "O interior do trem parece antigo, porém limpo. " +
+                    "As janelas mostram lugares que Serj reconhece: sua rua, sua universidade, o quarto onde acordou naquela madrugada."),
+            new Dialogo("SERJ", "Isso não pode estar aqui."),
+            new Dialogo("IBIS", "Talvez o trem não esteja mostrando o lugar. Talvez esteja mostrando o que queremos ver."),
+            new Dialogo("DEYV", "Não olhem por muito tempo."),
+            new Dialogo("NARRADOR", "Uma das janelas muda. " +
+                    "Em vez de sua casa, Serj vê Ibis sozinho, sentado em uma sala escura. Ele parece mais velho."),
+            new Dialogo("SERJ", "Ibis..."),
+            new Dialogo("IBIS", "Não é real."),
+            new Dialogo("NARRADOR", "A cena muda novamente. Agora Deyv aparece parado diante de dezenas de corpos cobertos por lençóis."),
+            new Dialogo("DEYV", "Não toque no vidro."),
+            new Dialogo("NARRADOR", "Serj se afasta. " +
+                    "Por um instante, sente que alguma parte de si ficou olhando para o reflexo mesmo depois de desviar o rosto.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Reforçar Ibis e afastá-lo da janela — afinidadeP1 +4, carisma +2, resistênciaMental +1.
+    // Escolha B: Perguntar a Deyv sobre a visão — afinidadeP2 +4, confiança +2, resistênciaMental -1.
+
+    // =========================================================
+    // CAPÍTULO 3 - CENA 3
+    // O NOME ESCRITO
+    // =========================================================
+
+    public static Dialogo[] cap3cen3 = {
+
+            new Dialogo("NARRADOR", "No fim do trem, existe uma porta com cinco símbolos. " +
+                    "Um deles corresponde ao amuleto encontrado no primeiro capítulo."),
+            new Dialogo("SERJ", "Os itens estão ligados a este lugar."),
+            new Dialogo("DEYV", "Cada objeto é uma parte de uma memória."),
+            new Dialogo("IBIS", "Memória de quem?"),
+            new Dialogo("DEYV", "De quem ficou para trás."),
+            new Dialogo("NARRADOR", "Atrás da porta existe uma sala coberta de páginas. " +
+                    "No centro, um livro aberto contém os nomes de Serj, Ibis e Deyv."),
+            new Dialogo("SERJ", "A data da nossa chegada está aqui."),
+            new Dialogo("IBIS", "E depois dos nossos nomes... tem outro nome."),
+            new Dialogo("NARRADOR", "O quarto nome está riscado. Só é possível ler as últimas letras: \"" +
+                    "...MIKHAIL\"."),
+            new Dialogo("SERJ", "Ele esteve aqui antes."),
+            new Dialogo("DEYV", "Mikhail não foi o primeiro. E também não será o último."),
+            new Dialogo("NARRADOR", "As páginas começam a virar sozinhas, até parar em uma folha com uma única frase: " +
+                    "\"A saída exige uma escolha que ninguém quer fazer.\"")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Contar imediatamente a Ibis o que foi descoberto — afinidadeP1 +5, confiança +1.
+    // Escolha B: Guardar a informação por enquanto — liderança +2, confiança -2.
+
+    // =========================================================
+    // CAPÍTULO 3 - CENA 4
+    // A FALSA SAÍDA
+    // =========================================================
+
+    public static Dialogo[] cap3cen4 = {
+
+            new Dialogo("NARRADOR", "Uma porta iluminada aparece no fim da plataforma." +
+                    " Um corredor além dela parece levar diretamente para a rua de casa."),
+            new Dialogo("IBIS", "É isso. Nós conseguimos."),
+            new Dialogo("DEYV", "Não."),
+            new Dialogo("SERJ", "Como sabe?"),
+            new Dialogo("DEYV", "Porque a porta verdadeira não mostra o que você deseja. Ela mostra o que você perdeu."),
+            new Dialogo("NARRADOR", "Deyv toca a maçaneta. A luz apaga por um segundo. Quando retorna, a porta mostra um corredor cheio de pessoas sem rosto."),
+            new Dialogo("IBIS", "Nós precisamos sair daqui."),
+            new Dialogo("NARRADOR", "Ao fundo, surge Mikhail. Pela primeira vez, ele demonstra preocupação."),
+            new Dialogo("MIKHAIL", "A porta está tentando convencê-los. Se alguém entrar, os outros dois não serão lembrados."),
+            new Dialogo("SERJ", "Por que você voltou?"),
+            new Dialogo("MIKHAIL", "Porque eu ignorei este aviso uma vez. Não pretendo ver outro grupo cometer o mesmo erro."),
+            new Dialogo("NARRADOR", "A porta desaparece. Mikhail deixa um pequeno papel nas mãos de Serj:" +
+                    " \"A estação é apenas o caminho. O centro está abaixo dela.\"")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Acreditar em Mikhail — confiança +3, resistênciaMental +2, liderança +1.
+    // Escolha B: Acreditar na falsa saída — liderança +2, resistênciaMental -4, afinidadeP1 -3, afinidadeP2 -3.
+    // escolha para item
+    // Item 05: Medalhão rachado — resistênciaMental +3.
+    // Item 06: Mapa subterrâneo — liderança +2, confiança +1.
+
+    // =========================================================
+    // CAPÍTULO 4 - CENA 1
+    // A CASA DE BAIXO
+    // =========================================================
+
+    public static Dialogo[] cap4cen1 = {
+
+            new Dialogo("CAPÍTULO 4"),
+
+            new Dialogo("NARRADOR", "[CAPÍTULO 4]\n\nA entrada subterrânea fica abaixo da estação. " +
+                    "Não existe placa, escada ou indicação de que o lugar deveria estar ali. Mesmo assim, os três encontram uma passagem escondida sob a plataforma."),
+            new Dialogo("IBIS", "Eu nunca vou conseguir me acostumar com isso."),
+            new Dialogo("SERJ", "Acho que esse lugar não quer que a gente se acostume."),
+            new Dialogo("DEYV", "Essa é uma das poucas coisas que aprendi aqui."),
+            new Dialogo("NARRADOR", "As paredes inferiores lembram os corredores de uma casa antiga. " +
+                    "Existem quartos, mesas e fotografias. Nenhuma fotografia mostra pessoas inteiras; os rostos estão sempre apagados."),
+            new Dialogo("SERJ", "Tem alguém vivendo aqui."),
+            new Dialogo("VOZ FEMININA", "Ainda não."),
+            new Dialogo("NARRADOR", "Uma mulher aparece no fim do corredor. " +
+                    "Ela segura uma lanterna e não parece surpresa ao encontrar o grupo."),
+            new Dialogo("ELENA", "Meu nome é Elena. Não se aproximem do quarto vermelho."),
+            new Dialogo("IBIS", "Por quê?"),
+            new Dialogo("ELENA", "Porque ele sempre escolhe alguém.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Serj mantém o grupo unido e segue Elena — liderança +3, afinidadeP1 +2, confiança +1.
+    // Escolha B: Separar o grupo para investigar — liderança -2, resistênciaMental -2, confiança -2.
+
+    // =========================================================
+    // CAPÍTULO 4 - CENA 2
+    // O PREÇO
+    // =========================================================
+
+    public static Dialogo[] cap4cen2 = {
+
+            new Dialogo("NARRADOR", "Elena leva os três até uma cozinha abandonada. " +
+                    "Sobre a mesa há quatro pratos, todos ainda quentes."),
+            new Dialogo("SERJ", "Quem preparou isso?"),
+            new Dialogo("ELENA", "O lugar. Ele aprende o que as pessoas esperam encontrar."),
+            new Dialogo("IBIS", "Então você sabe sair?"),
+            new Dialogo("ELENA", "Eu sei chegar perto."),
+            new Dialogo("DEYV", "E por que ainda está aqui?"),
+            new Dialogo("ELENA", "Porque eu tentei sozinho."),
+            new Dialogo("NARRADOR", "Ela aponta para uma parede. " +
+                    "Existem dezenas de riscos verticais, agrupados em três blocos."),
+            new Dialogo("ELENA", "Cada grupo acredita que pode escapar sem pagar um preço. " +
+                    "Depois descobre que a prisão exige alguém que escolha ficar."),
+            new Dialogo("IBIS", "Então é isso que o bilhete queria dizer."),
+            new Dialogo("SERJ", "Mas por que sempre uma pessoa?"),
+            new Dialogo("ELENA", "Porque o lugar foi construído para nunca ficar vazio.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Perguntar a Elena como evitar o sacrifício — confiança +3, carisma +2, resistênciaMental +1.
+    // Escolha B: Pressionar Deyv por respostas — afinidadeP2 +4, confiança +1, afinidadeP1 -2.
+
+    // =========================================================
+    // CAPÍTULO 4 - CENA 3
+    // A VERDADE DE DEYV
+    // =========================================================
+
+    public static Dialogo[] cap4cen3 = {
+
+            new Dialogo("NARRADOR", "Durante a madrugada impossível daquele lugar, Deyv pede para conversar com Serj a sós."),
+            new Dialogo("DEYV", "Preciso contar uma coisa antes de chegarmos ao centro."),
+            new Dialogo("SERJ", "Estou ouvindo."),
+            new Dialogo("DEYV", "Eu conhecia os registros antes de vocês chegarem. Eu procurei a estação de propósito."),
+            new Dialogo("SERJ", "Você sabia que nós estaríamos aqui?"),
+            new Dialogo("DEYV", "Não exatamente. Mas sabia que o lugar precisava de três pessoas."),
+            new Dialogo("SERJ", "Por que nós três?"),
+            new Dialogo("DEYV", "Porque a prisão não escolhe apenas vítimas. Ela escolhe relações. " +
+                    "Alguém precisa confiar, alguém precisa liderar e alguém precisa acreditar que ainda existe uma saída."),
+            new Dialogo("SERJ", "E quem você decidiu que seria cada um?"),
+            new Dialogo("DEYV", "Eu ainda não decidi."),
+            new Dialogo("NARRADOR", "Deyv tira do bolso uma fotografia antiga. Nela aparecem ele, " +
+                    "Mikhail e outras pessoas diante da mesma estação."),
+            new Dialogo("DEYV", "Eu já tentei salvar um grupo antes. Foi por isso que voltei."),
+            new Dialogo("SERJ", "E o que aconteceu?"),
+            new Dialogo("DEYV", "Eu escolhi a porta errada.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Perdoar Deyv e continuar ouvindo — afinidadeP2 +6, confiança +3.
+    // Escolha B: Afastar Deyv do grupo — afinidadeP2 -5, liderança +3, afinidadeP1 +2.
+
+    // =========================================================
+    // CAPÍTULO 4 - CENA 4
+    // O RELÓGIO
+    // =========================================================
+
+    public static Dialogo[] cap4cen4 = {
+
+            new Dialogo("NARRADOR", "No centro da casa subterrânea existe uma sala circular. " +
+                    "No teto, um enorme relógio marca 03:59."),
+            new Dialogo("ELENA", "Quando chegar a 04:00, a passagem aparece."),
+            new Dialogo("SERJ", "E qual é o preço?"),
+            new Dialogo("ELENA", "Uma decisão sincera."),
+            new Dialogo("IBIS", "Isso não faz sentido."),
+            new Dialogo("DEYV", "Faz para este lugar."),
+            new Dialogo("NARRADOR", "O relógio avança. 03:59:30.\n\nMikhail surge na porta e segura uma pequena placa metálica."),
+            new Dialogo("MIKHAIL", "Não escolham pelo medo. Foi assim que eu perdi meu irmão."),
+            new Dialogo("NARRADOR", "Elena entrega a Serj uma última peça: um símbolo de três lados."),
+            new Dialogo("ELENA", "Quando a porta abrir, você terá pouco tempo. O lugar vai tentar separar vocês."),
+            new Dialogo("SERJ", "E você?"),
+            new Dialogo("ELENA", "Eu já escolhi ficar há muito tempo."),
+            new Dialogo("NARRADOR", "04:00.\n\nO chão se abre lentamente, revelando uma escada que desce para um espaço completamente sem luz.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Segurar Ibis e Deyv juntos antes de descer — afinidadeP1 +3, afinidadeP2 +3, carisma +2.
+    // Escolha B: Descer primeiro e assumir o risco — liderança +4, confiança +1, resistênciaMental -1.
+    // escolha para item
+    // Item 07: Símbolo de três lados — confiança +2, liderança +1.
+    // Item 08: Fotografia de 2006 — carisma +2, afinidadeP1 +1, afinidadeP2 +1.
+
+    // =========================================================
+    // CAPÍTULO 5 - CENA 1
+    // A PRISÃO UNIVERSAL
+    // =========================================================
+
+    public static Dialogo[] cap5cen1 = {
+
+            new Dialogo("CAPÍTULO 5"),
+
+            new Dialogo("NARRADOR", "[CAPÍTULO 5]\n\nA escada termina em um salão impossível. " +
+                    "Não existe chão visível; apenas uma superfície escura que parece refletir estrelas debaixo dos pés."),
+            new Dialogo("IBIS", "Nós estamos dentro do céu?"),
+            new Dialogo("DEYV", "Não. Estamos abaixo dele."),
+            new Dialogo("SERJ", "Então onde estamos?"),
+            new Dialogo("NARRADOR", "Ao redor do grupo flutuam pedaços de prédios, fotografias, " +
+                    "relógios e objetos encontrados nos capítulos anteriores. " +
+                    "Tudo gira lentamente em torno de uma estrutura gigantesca no centro do salão."),
+            new Dialogo("ELENA", "O centro da prisão."),
+            new Dialogo("MIKHAIL", "A parte que ninguém deveria alcançar sozinho."),
+            new Dialogo("NARRADOR", "Mikhail e Elena permanecem próximos à entrada. Eles não podem avançar."),
+            new Dialogo("ELENA", "A partir daqui, a escolha pertence a vocês três."),
+            new Dialogo("SERJ", "Então vamos juntos."),
+            new Dialogo("NARRADOR", "A estrutura responde. Três caminhos se acendem: um para Serj, um para Ibis e um para Deyv.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Avançar junto com Ibis — afinidadeP1 +4, carisma +1, confiança +1.
+    // Escolha B: Avançar junto com Deyv — afinidadeP2 +4, confiança +2.
+    // Escolha C: Avançar sozinho — liderança +4, resistênciaMental -2.
+
+    // =========================================================
+    // CAPÍTULO 5 - CENA 2
+    // O CENTRO
+    // =========================================================
+
+    public static Dialogo[] cap5cen2 = {
+
+            new Dialogo("NARRADOR", "No centro da estrutura existe um espaço vazio. Uma voz sem origem fala diretamente na mente de Serj."),
+            new Dialogo("VOZ", "Vocês pediram uma saída."),
+            new Dialogo("SERJ", "Quem está falando?"),
+            new Dialogo("VOZ", "O lugar que guarda aquilo que os mundos esquecem."),
+            new Dialogo("IBIS", "Nós só queremos voltar."),
+            new Dialogo("VOZ", "Voltar exige equilíbrio. Três pessoas chegaram. Uma precisa permanecer."),
+            new Dialogo("DEYV", "Eu sabia."),
+            new Dialogo("SERJ", "Você sabia desde o começo."),
+            new Dialogo("DEYV", "Eu suspeitava."),
+            new Dialogo("NARRADOR", "A estrutura mostra lembranças dos três. Serj vê sua casa, Ibis vê sua família e Deyv vê pessoas que ele não conseguiu salvar antes."),
+            new Dialogo("VOZ", "A prisão não quer morte. Quer permanência."),
+            new Dialogo("ELENA", "Essa diferença é o que nos deu uma chance durante todos esses anos."),
+            new Dialogo("NARRADOR", "Elena fala da entrada sem se aproximar. " +
+                    "Mikhail mantém a mão sobre a placa metálica que carrega desde o segundo capítulo.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Exigir outra solução — liderança +3, confiança +2, resistênciaMental -1.
+    // Escolha B: Perguntar o que acontece com quem fica — carisma +2, confiança +3.
+
+    // =========================================================
+    // CAPÍTULO 5 - CENA 3
+    // A ESCOLHA
+    // =========================================================
+
+    public static Dialogo[] cap5cen3 = {
+
+            new Dialogo("NARRADOR", "Uma porta aparece. Do outro lado, há uma rua comum, com o céu claro e carros passando. " +
+                    "O mundo normal está a poucos passos."),
+            new Dialogo("IBIS", "É real?"),
+            new Dialogo("MIKHAIL", "Dessa vez, sim."),
+            new Dialogo("DEYV", "Mas existe apenas uma passagem."),
+            new Dialogo("ELENA", "E ela não permanece aberta para sempre."),
+            new Dialogo("NARRADOR", "Serj olha para os dois amigos. " +
+                    "Pela primeira vez desde que despertou entre os escombros, ele percebe que está diante de uma decisão que não pode ser adiada."),
+            new Dialogo("SERJ", "Eu não quero deixar ninguém aqui."),
+            new Dialogo("IBIS", "Nem eu quero que você fique sozinho."),
+            new Dialogo("DEYV", "Se sair é possível, alguém precisa aceitar o preço."),
+            new Dialogo("NARRADOR", "O chão começa a desaparecer sob os pés de Serj. " +
+                    "As memórias, os objetos e os corredores do lugar se desfazem como cinzas.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Escolher Ibis para atravessar — afinidadeP1 +5, liderança +2, confiança -2.
+    // Escolha B: Escolher Deyv para atravessar — afinidadeP2 +5, confiança +2, afinidadeP1 -4.
+    // Escolha C: Recusar a escolha e procurar outra passagem — liderança +4, resistênciaMental -3, confiança +1.
+
+    // =========================================================
+    // CAPÍTULO 5 - CENA 4
+    // O ÚLTIMO PASSAGEIRO
+    // =========================================================
+
+    public static Dialogo[] cap5cen4 = {
+            //Finais (Deve ser decidido por escolhas esse é só um exemplo)
+            new Dialogo("NARRADOR", "A porta permanece aberta. O corredor do mundo normal está silencioso, mas desta vez é um silêncio comum.\n" +
+                    "\nSerj percebe que a decisão final depende daquilo que construiu com Ibis, Deyv e consigo mesmo."),
+            new Dialogo("MIKHAIL", "Não existe uma escolha perfeita."),
+            new Dialogo("ELENA", "Existe apenas a escolha que você consegue sustentar depois dela."),
+            new Dialogo("NARRADOR", "Se Serj atravessa acompanhado de Ibis, o lugar se fecha atrás de Deyv. " +
+                    "Se atravessa com Deyv, Ibis permanece do outro lado. Se os três falharem em confiar uns nos outros, a porta desaparece."),
+            new Dialogo("NARRADOR", "Mas existe uma quarta possibilidade.\n" +
+                    "\nSe os laços entre os três permanecerem equilibrados e a resistência mental de Serj tiver chegado ao máximo, ele percebe que a prisão não precisa de outra vítima."),
+            new Dialogo("SERJ", "Ela precisa de alguém que escolha ficar."),
+            new Dialogo("IBIS", "Serj... não."),
+            new Dialogo("DEYV", "Você encontrou uma quarta porta."),
+            new Dialogo("NARRADOR", "Serj empurra Ibis e Deyv para a saída. A porta se fecha entre eles. " +
+                    "Do outro lado, o mundo normal retorna.\n\nSerj permanece no salão vazio, agora completamente sozinho."),
+            new Dialogo("SERJ", "Pelo menos vocês podem voltar."),
+            new Dialogo("NARRADOR", "Mikhail e Elena observam em silêncio. Pela primeira vez, o lugar parece perder sua forma hostil."),
+            new Dialogo("ELENA", "Acabou."),
+            new Dialogo("NARRADOR", "No relógio de Serj, finalmente aparece 03:20.\n\n[FINAL CANÔNICO — O ÚLTIMO PASSAGEIRO]"),
+            new Dialogo("NARRADOR", "Em algum ponto entre os mundos, uma nova luz se acende. " +
+                    "E, pela primeira vez em muito tempo, não existe ninguém para responder a ela.")
+    };
+
+    // Pode haver uma escolha.
+    // Escolha A: Aceitar o sacrifício — resistênciaMental +5, confiança +2, liderança +2.
+    // Escolha B: Tentar voltar para buscar os outros — liderança +3, resistênciaMental -5, afinidadeP1 +2, afinidadeP2 +2.
+    // escolha para item
+    // Item 09: Chave da prisão — confiança +3, resistênciaMental +2.
+    // Item 10: Última página do registro — liderança +2, carisma +2.
+}

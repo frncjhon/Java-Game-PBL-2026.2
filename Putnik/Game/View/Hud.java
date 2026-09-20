@@ -6,6 +6,7 @@ public class Hud {
     Scanner scanner = new Scanner(System.in);
     public int HudPersonalidade() {
         System.out.println();
+        System.out.println("       Escolha a personalidade inicial do seu personagem");
         System.out.println("╔══════════════════╗   ╔══════════════════╗   ╔══════════════════╗");
         System.out.println("║   CARISMÁTICO    ║   ║     CORAJOSO     ║   ║  PERFECCIONISTA  ║");
         System.out.println("╠══════════════════╣   ╠══════════════════╣   ╠══════════════════╣");
@@ -23,12 +24,20 @@ public class Hud {
         System.out.println("╔══════════════════════════════════╗");
         System.out.println("║          STATUS DO PERSONAGEM    ║");
         System.out.println("╠══════════════════════════════════╣");
-        System.out.println("║ Confiança:       " + confianca);
-        System.out.println("║ Afinidade P1:    " + afinidadep1);
-        System.out.println("║ Afinidade P2:    " + afinidadep2);
-        System.out.println("║ Liderança:        " + lideranca);
-        System.out.println("║ Sanidade:        " + sanidade);
+        System.out.println("║ Confiança:      " + confianca);
+        System.out.println("║ Afinidade Ibis: " + afinidadep1);
+        System.out.println("║ Afinidade Deyv: " + afinidadep2);
+        System.out.println("║ Liderança:      " + lideranca);
+        System.out.println("║ Sanidade:       " + sanidade);
         System.out.println("╚══════════════════════════════════╝");
+        }
+
+        public void AvisoEnter(){
+        System.out.println("\nAVISO: para continuar a narrativa, pressione ENTER após cada novo dialogo.\n");
+        }
+
+        public void Limparterminal(){
+                for (int i = 0; i < 50; i++) System.out.println();
         }
     }
 

@@ -2,7 +2,12 @@ package View;
 import java.util.Scanner;
 
 public class Menu {
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
+
+    public Menu(Scanner scanner) {
+        this.scanner = scanner;
+    }    
+    
     public int ExibirMenu() {
 
         System.out.println("""
@@ -18,7 +23,20 @@ public class Menu {
 
         System.out.println("    [1] JOGAR");
         System.out.println("    [2] SAIR");
+        System.out.println("    [3] INFORMAÇõES")
         System.out.print("Escolha uma opção: ");
-        return scanner.nextInt();
+        while (true) {
+            if (!scanner.hasNextInt()) {
+                System.out.println("Opção inválida! Digite 1 ou 2.");
+                scanner.next();
+                continue;
+            }
+            int opcao = scanner.nextInt();
+
+            if (opcao >= 1 && opcao <= 3) {
+                return opcao;
+            }
+            System.out.println("Opção inválida! Digite 1 ou 2.");
+        }
     }
 }

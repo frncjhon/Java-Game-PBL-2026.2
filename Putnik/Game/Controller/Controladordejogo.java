@@ -17,11 +17,11 @@ public class Controladordejogo {
 
     // Criação das instâncias
     public Controladordejogo() {
-        estado = new Estadodejogo();
-        menu = new Menu();
-        introducao = new Introducao();
-        hud = new Hud();
         scanner = new Scanner(System.in);
+        estado = new Estadodejogo();
+        menu = new Menu(scanner);
+        introducao = new Introducao();
+        hud = new Hud(scanner);
     }
 
 

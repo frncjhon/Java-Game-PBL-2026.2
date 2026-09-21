@@ -32,11 +32,9 @@ public class Escolha {
 
             try {
                 selecionada = Integer.parseInt(scanner.nextLine().trim());
-
                 if (selecionada < 1 || selecionada > opcoes.size()) {
                     System.out.println("Opção inválida. Tente novamente.");
                 }
-
             } catch (NumberFormatException e) {
                 System.out.println("Opção inválida. Tente novamente.");
             }

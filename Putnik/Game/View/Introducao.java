@@ -1,9 +1,7 @@
-package View;
-
+package View; // Informa a qual grupo o arquivo pertence.
+// Apenas Imprime a Introdução do Jogo.
 public class Introducao {
-
     public void Contexto() {
-
         System.out.println(
                 "Os últimos dias não estavam sendo fáceis para o nosso protagonista.\n" +
                         "Ele havia enfrentado muita pressão com os trabalhos da universidade e,\n" +
@@ -25,5 +23,4 @@ public class Introducao {
 
     }
 }
-
-
+// Fim

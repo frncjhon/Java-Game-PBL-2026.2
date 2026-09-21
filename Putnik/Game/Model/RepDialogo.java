@@ -6,7 +6,6 @@ public class RepDialogo {
     // CAPÍTULO 1 - CENA 1
     public static Dialogo[] cap1cen1 = {
 
-            new Dialogo("CAPÍTULO 1"),
             new Dialogo("NARRADOR", "Serj desperta com a sensação de que alguma coisa havia mudado.\n" +
                     "Não havia barulho de carros, vento, televisão ou qualquer som vindo das casas vizinhas.\n\n" +
                     "Ele abre os olhos lentamente. O teto de seu quarto não está mais ali."),
@@ -125,11 +124,6 @@ public class RepDialogo {
             new Dialogo("MIKHAIL", "Se ouvirem três batidas na parede, saiam da torre. Não importa onde estiverem.")
 
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Confiar no aviso de Mikhail — confiança +3, liderança +1.
-    // Escolha B: Desconfiar de Mikhail — liderança +2, confiança -2.
-
 
     // CAPÍTULO 2 - CENA 3
     public static Dialogo[] cap2cen3 = {
@@ -521,4 +515,20 @@ public class RepDialogo {
             new Dialogo("NARRADOR", "A última imagem mostra os três sentados lado a lado enquanto a luz da sala desaparece lentamente.")
 
     };
-}
+
+    public static Dialogo[] Extra = {
+
+            new Dialogo("???", "A Prisão Universal não é um lugar construído para prender pessoas. "
+                    + "Ela é um lugar que surge onde diferentes realidades se encontram.\n"
+                    + "Cidades, casas, estações e corredores são apenas formas que ela assume para atrair aqueles que atravessam seus limites."),
+
+            new Dialogo("Ninguém sabe ao certo quem criou a prisão, ou se ela sequer foi criada por alguém. "
+                    + "Os poucos que descobriram suas regras perceberam apenas uma coisa: "
+                    + "o lugar não quer simplesmente impedir uma fuga.\n"
+                    + "Ele quer que alguma coisa permaneça."),
+
+            new Dialogo("Talvez seja uma pessoa. Talvez uma memória. Talvez algo que não deveria existir.\n"
+                    + "Os registros mais antigos terminam sempre da mesma maneira:\n\n"
+                    + "\"Quando a prisão aprende seu nome, você já faz parte dela.\"")
+    };
+};

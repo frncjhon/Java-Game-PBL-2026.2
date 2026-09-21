@@ -18,15 +18,12 @@ public class Capitulo {
         this.titulo = titulo;
         this.dialogos = new ArrayList<>(List.of(cena));
     }
-
     public void adicionarCena(Dialogo[] cena) {
         dialogos.addAll(List.of(cena));
     }
-
     public void adicionarDialogo(Dialogo dialogo) {
         dialogos.add(dialogo);
     }
-
     public void exibirCapitulo(){
         System.out.println(""+ titulo +"\n");
         for (Dialogo d : dialogos){

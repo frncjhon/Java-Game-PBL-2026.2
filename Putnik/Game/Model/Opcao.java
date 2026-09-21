@@ -10,11 +10,9 @@ public class Opcao {
         this.texto = texto;
         this.efeito = efeito;
     }
-
     public String getTexto() {
         return texto;
     }
-
     public void aplicarEfeito(Estadodejogo estado){
         if (efeito != null){
             efeito.accept(estado);

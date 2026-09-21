@@ -23,7 +23,7 @@ public class Menu {
 
         System.out.println("    [1] JOGAR");
         System.out.println("    [2] SAIR");
-        System.out.println("    [3] INFORMAÇõES")
+        System.out.println("    [3] INFORMAÇõES");
         System.out.print("Escolha uma opção: ");
         while (true) {
             if (!scanner.hasNextInt()) {

@@ -27,7 +27,7 @@ public class Menu {
         System.out.print("Escolha uma opção: ");
         while (true) {
             if (!scanner.hasNextInt()) {
-                System.out.println("Opção inválida! Digite 1 ou 2.");
+                System.out.println("Opção inválida!");
                 scanner.next();
                 continue;
             }
@@ -36,7 +36,7 @@ public class Menu {
             if (opcao >= 1 && opcao <= 3) {
                 return opcao;
             }
-            System.out.println("Opção inválida! Digite 1 ou 2.");
+            System.out.println("Opção inválida!");
         }
     }
 }

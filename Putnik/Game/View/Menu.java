@@ -1,14 +1,13 @@
-package View;
-import java.util.Scanner;
+package View; // Informa a qual grupo o arquivo pertence.
+import java.util.Scanner; // Import para poder ler a opção escolhida pelo player.
 
-public class Menu {
+public class Menu { // Inicializa o menu, e configura as entradas do jogador.
     private Scanner scanner = new Scanner(System.in);
     public Menu(Scanner scanner) {
         this.scanner = scanner;
-    }    
-    
+    }
+    // Simples Prints, com scanner e validação.
     public int ExibirMenu() {
-
         System.out.println("""
          ███████████  █████  █████ ███████████ ██████   █████ █████ █████   ████
         ▒▒███▒▒▒▒▒███▒▒███  ▒▒███ ▒█▒▒▒███▒▒▒█▒▒██████ ▒▒███ ▒▒███ ▒▒███   ███▒ 
@@ -24,24 +23,23 @@ public class Menu {
         System.out.println("    [2] SAIR");
         System.out.println("    [3] INFORMAÇõES");
         System.out.print("Escolha uma opção: ");
-        while (true) {
+        while (true) { // LOOP para validação.
             if (!scanner.hasNextInt()) {
                 System.out.println("Opção inválida!");
                 scanner.next();
                 continue;
             }
             int opcao = scanner.nextInt();
-
             if (opcao >= 1 && opcao <= 3) {
                 return opcao;
             }
             System.out.println("Opção inválida!");
         }
     }
-
+    // Apenas Imprime as Informações
     public void ExibirInfo(){
         System.out.println("""
-                
+           
             ███████████  █████  █████ ███████████ ██████   █████ █████ █████   ████
             ▒▒███▒▒▒▒▒███▒▒███  ▒▒███ ▒█▒▒▒███▒▒▒█▒▒██████ ▒▒███ ▒▒███ ▒▒███   ███▒ 
              ▒███    ▒███ ▒███   ▒███ ▒   ▒███  ▒  ▒███▒███ ▒███  ▒███  ▒███  ███   
@@ -70,6 +68,6 @@ public class Menu {
                 
                 Criado por Jhony França & Cleuber Coelho
             """);
-
     }
 }
+// Fim

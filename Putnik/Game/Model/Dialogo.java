@@ -1,7 +1,5 @@
 package Model;
 
-import java.security.PrivateKey;
-
 public class Dialogo {
     private String personagem;
     private String texto;

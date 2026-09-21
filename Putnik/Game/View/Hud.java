@@ -1,14 +1,12 @@
-package View;
+package View; // Informa a qual grupo o arquivo pertence.
 import java.util.Scanner;
 
-
-public class Hud {
-
+public class Hud { // Inicializa o Hud, e configura a leitura das entradas do jogador.
     private Scanner scanner;
     public Hud(Scanner scanner) {
         this.scanner = scanner;
     }
-
+    // Apenas Imprime, as opções de personalidade, e retorna a escolha.
     public int HudPersonalidade() {
 
         System.out.println();
@@ -28,8 +26,9 @@ public class Hud {
         System.out.print("Escolha sua característica: ");
 
         return scanner.nextInt();
-    }
 
+    }
+    // Utiliza as informações passada pelo controlador sobre o estadodejogo.java para imprimir os status.
     public void HudStatus(double confianca, double afinidadep1, double afinidadep2, double sanidade, double lideranca) {
 
         System.out.println("╔══════════════════════════════════╗");
@@ -41,17 +40,20 @@ public class Hud {
         System.out.println("║ Liderança:      " + lideranca);
         System.out.println("║ Sanidade:       " + sanidade);
         System.out.println("╚══════════════════════════════════╝");
-    }
 
+    }
+    // Avisa ao jogador a forma de continuar o jogo.
     public void AvisoEnter(){
         System.out.println("\nAVISO: para continuar a narrativa, pressione ENTER após cada novo dialogo.\n");
     }
-
+    // Apesar do nome, a verdadeira função desse metodo é imprimir 50 linhas vazias, para simular a limpeza.
     public void Limparterminal(){
         for (int i = 0; i < 50; i++)
             System.out.println();
     }
+    // Mensagem de morte, caso a sanidade chegue a zero.
     public void MensagemMorte(){
         System.out.println("Oh não! Sua sanidade chegou a zero, e o Serj Enlouqueceu.");
     }
 }
+// Fim

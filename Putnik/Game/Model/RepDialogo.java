@@ -1,7 +1,9 @@
-package Model;
-import Model.Dialogo;
+package Model; // Informa a qual grupo o arquivo pertence.
+
 public class RepDialogo {
 
+    // Aqui está o repositório de diálogos, classe que armazena as falas em vetores do tipo Dialogo[],
+    // inicializados com objetos "new Dialogo()", cada um podendo contenr o NOME do personagem e o TEXTO da fala.
 
     // CAPÍTULO 1 - CENA 1
     public static Dialogo[] cap1cen1 = {
@@ -42,7 +44,6 @@ public class RepDialogo {
     };
 
     // CAPÍTULO 1 - CENA 3
-
     public static Dialogo[] cap1cen3 = {
 
             new Dialogo("NARRADOR", "A voz desaparece. Serj e Ibis seguem por um corredor coberto de poeira até encontrar uma porta de metal.\n\n" +
@@ -532,3 +533,4 @@ public class RepDialogo {
                     + "\"Quando a prisão aprende seu nome, você já faz parte dela.\"")
     };
 };
+// Fim

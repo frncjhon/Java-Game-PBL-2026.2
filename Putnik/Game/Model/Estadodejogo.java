@@ -14,7 +14,7 @@ public class Estadodejogo {
     // Construtor
     public Estadodejogo() {
         // Valores iniciais do estado de jogo
-        sanidade = 0;
+        sanidade = 10;
         lideranca = 0;
         confianca = 0;
 
@@ -29,34 +29,20 @@ public class Estadodejogo {
     public void AumentarSanidade(double valor) {
         sanidade = sanidade + valor;
     }
-    public void DiminuirSanidade(double valor) {
-        sanidade = sanidade - valor;
-    }
+
     // Liderança
     public void AumentarLideranca(double valor) {
         lideranca = lideranca + valor;
-    }
-    public void DiminuirLideranca(double valor) {
-        lideranca = lideranca - valor;
     }
     // Confiança
     public void AumentarConfianca(double valor) {
         confianca = confianca + valor;
     }
-    public void DiminuirConfianca(double valor) {
-        confianca = confianca - valor;
-    }
-
 
 // Métodos para alterar afinidade com NPCs
-
     // NPC1
     public void AumentarAfinidadeNPC1(double valor) {
         afinidadenpc1 = afinidadenpc1 + valor;
-    }
-
-    public void DiminuirAfinidadeNPC1(double valor) {
-        afinidadenpc1 = afinidadenpc1 - valor;
     }
 
     // NPC2
@@ -64,7 +50,4 @@ public class Estadodejogo {
         afinidadenpc2 = afinidadenpc2 + valor;
     }
 
-    public void DiminuirAfinidadeNPC2(double valor) {
-        afinidadenpc2 = afinidadenpc2 - valor;
-    }
 }

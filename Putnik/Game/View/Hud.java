@@ -3,8 +3,11 @@ import java.util.Scanner;
 
 
 public class Hud {
-    
-    Scanner scanner = new Scanner(System.in);
+
+    private Scanner scanner;
+    public Hud(Scanner scanner) {
+        this.scanner = scanner;
+    }
             public int HudPersonalidade() {
                 
             System.out.println();
@@ -21,8 +24,19 @@ public class Hud {
             System.out.println();
             System.out.print("Escolha sua característica: ");
             
-            return scanner.nextInt();
-            
+            while (true){
+                if (!scanner.hasNextInt()){
+                    System.out.println("Opção Invalida!");
+                    scanner.next();
+                    continue;
+                }
+                int opcao = scanner.nextInt();
+                if (opcao >= 1 && opcao <= 3){
+                    return opcao;
+                }
+                System.out.println("Opção inválida!");
+            }
+                                
         }
         
         public void HudStatus(double confianca, double afinidadep1, double afinidadep2, double sanidade, double lideranca) {

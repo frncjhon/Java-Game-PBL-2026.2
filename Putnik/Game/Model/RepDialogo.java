@@ -2,10 +2,10 @@ package Model;
 import Model.Dialogo;
 public class RepDialogo {
 
-    
+
     // CAPÍTULO 1 - CENA 1
     public static Dialogo[] cap1cen1 = {
-            
+
             new Dialogo("CAPÍTULO 1"),
             new Dialogo("NARRADOR", "Serj desperta com a sensação de que alguma coisa havia mudado.\n" +
                     "Não havia barulho de carros, vento, televisão ou qualquer som vindo das casas vizinhas.\n\n" +
@@ -17,13 +17,12 @@ public class RepDialogo {
             new Dialogo("NARRADOR", "Ao tentar se levantar, Serj percebe que não está ferido.\n" +
                     "Seu relógio continua funcionando. 03:17. 03:18. 03:19.\n\n" +
                     "Então, do outro lado dos escombros, uma voz conhecida surge.")
-            
-    };
 
+    };
 
     // CAPÍTULO 1 - CENA 2
     public static Dialogo[] cap1cen2 = {
-            
+
             new Dialogo("IBIS", "Serj?"),
             new Dialogo("SERJ", "Ibis?!"),
             new Dialogo("NARRADOR", "Ibis surge por trás de uma parede caída, coberto de poeira.\n" +
@@ -40,18 +39,13 @@ public class RepDialogo {
             new Dialogo("SERJ", "\"Não siga vozes que chamarem pelo seu nome.\""),
             new Dialogo("IBIS", "Isso não parece muito acolhedor."),
             new Dialogo("NARRADOR", "Antes que Serj possa responder, uma voz distante chama por ele. Exatamente com sua própria voz.")
-            
+
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Ignorar a voz e continuar com Ibis — afinidadeP1 +5, confiança +2, resistênciaMental +1.
-    // Escolha B: Procurar a origem da voz — liderança +2, confiança -1, resistênciaMental -2.
-
-    
     // CAPÍTULO 1 - CENA 3
-    
+
     public static Dialogo[] cap1cen3 = {
-            
+
             new Dialogo("NARRADOR", "A voz desaparece. Serj e Ibis seguem por um corredor coberto de poeira até encontrar uma porta de metal.\n\n" +
                     "Atrás dela existe uma pequena sala de arquivo.\n" +
                     "Pastas antigas estão espalhadas pelo chão, todas com datas diferentes.\n" +
@@ -71,17 +65,12 @@ public class RepDialogo {
             new Dialogo("NARRADOR", "Quando saem da sala, eles percebem um terceiro conjunto de pegadas na poeira.\n" +
                     "As marcas começam perto do arquivo e seguem para a saída."),
             new Dialogo("SERJ", "Nós não estávamos sozinhos.")
-            
+
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Levar o mapa e seguir em frente — liderança +2, confiança +1.
-    // Escolha B: Vasculhar mais arquivos — resistênciaMental -1, confiança +2, liderança +1.
-
-    
     // CAPÍTULO 1 - CENA 4
     public static Dialogo[] cap1cen4 = {
-            
+
             new Dialogo("NARRADOR", "Do lado de fora, a cidade parece abandonada.\n" +
                     "Prédios inteiros estão cobertos por uma névoa baixa.\n" +
                     "Não há carros, postes acesos ou qualquer movimento nas janelas."),
@@ -100,17 +89,9 @@ public class RepDialogo {
             new Dialogo("NARRADOR", "E alguém, em algum lugar, observa os dois se aproximarem.")
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Serj assume a liderança — liderança +3, afinidadeP1 +2.
-    // Escolha B: Deixar Ibis decidir — afinidadeP1 +4, carisma +2, liderança -1.
-    // Escolha para item.
-    // Item 01: Amuleto de cobre — resistênciaMental +2.
-    // Item 02: Caderno queimado — confiança +2.
-
-
     // CAPÍTULO 2 - CENA 1
     public static Dialogo[] cap2cen1 = {
-            
+
             new Dialogo("CAPÍTULO 2"),
             new Dialogo("NARRADOR", "A caminhada até a torre dura horas.\n" +
                     "O estranho é que o céu nunca muda. Não amanhece, não escurece, e o relógio de Serj continua preso às 03:19."),
@@ -126,14 +107,9 @@ public class RepDialogo {
             new Dialogo("SERJ", "Ou sabia que sempre viria alguém.")
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Mostrar a Ibis o jornal mais antigo — afinidadeP1 +4, carisma +1.
-    // Escolha B: Esconder o jornal e continuar — liderança +2, confiança -1.
-
-    
     // CAPÍTULO 2 - CENA 2
     public static Dialogo[] cap2cen2 = {
-            
+
             new Dialogo("NARRADOR", "Na base da torre, uma janela se abre sozinha no terceiro andar.\n" +
                     "Um homem observa Serj e Ibis de longe."),
             new Dialogo("MIKHAIL", "Se pretendem entrar, não levem nada que encontrem no primeiro andar."),
@@ -147,17 +123,17 @@ public class RepDialogo {
             new Dialogo("MIKHAIL", "Não deveriam. Mas também não deveriam ignorar um aviso gratuito."),
             new Dialogo("NARRADOR", "Mikhail se afasta antes de responder outras perguntas. Serj percebe que ele manca de uma das pernas."),
             new Dialogo("MIKHAIL", "Se ouvirem três batidas na parede, saiam da torre. Não importa onde estiverem.")
-            
+
     };
 
     // Pode haver uma escolha.
     // Escolha A: Confiar no aviso de Mikhail — confiança +3, liderança +1.
     // Escolha B: Desconfiar de Mikhail — liderança +2, confiança -2.
 
-  
+
     // CAPÍTULO 2 - CENA 3
     public static Dialogo[] cap2cen3 = {
-            
+
             new Dialogo("NARRADOR", "No quinto andar, Serj encontra uma sala circular. Nas paredes existem dezenas de nomes escritos.\n" +
                     "Alguns são familiares. Outros pertencem a pessoas que ainda nem nasceram."),
             new Dialogo("IBIS", "Meu nome está ali."),
@@ -172,14 +148,9 @@ public class RepDialogo {
             new Dialogo("SERJ", "Eu sei."),
             new Dialogo("NARRADOR", "Os dois saem da sala. Atrás deles, a porta se fecha sozinha.\n" +
                             "Quando olham novamente para a parede, o nome de Ibis desapareceu.")
-            
+
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Seguir Ibis e abandonar a porta — afinidadeP1 +5, resistênciaMental +1.
-    // Escolha B: Tentar abrir a porta mesmo assim — liderança +2, confiança +1, resistênciaMental -3.
-
-    
     // CAPÍTULO 2 - CENA 4
     public static Dialogo[] cap2cen4 = {
 
@@ -198,16 +169,8 @@ public class RepDialogo {
                     "NARRADOR",
                     "Deyv olha para a torre atrás deles e sorri de forma quase imperceptível."),
             new Dialogo("DEYV", "Se querem uma saída, precisam chegar até a estação antes que o relógio marque 04:00.")
-            
+
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Aceitar a ajuda de Deyv — afinidadeP2 +5, confiança +2, carisma +1.
-    // Escolha B: Exigir respostas antes de seguir — liderança +2, afinidadeP2 -1, confiança +1.
-    // Escolha para item.
-    // Item 03: Relógio parado — resistênciaMental +1, confiança +2.
-    // Item 04: Fita cassete sem rótulo — carisma +1, resistênciaMental +1.
-
 
     // CAPÍTULO 3 - CENA 1
 
@@ -228,13 +191,8 @@ public class RepDialogo {
             new Dialogo("DEYV", "Eu não disse isso."),
             new Dialogo("NARRADOR", "Um trem sem maquinista chega à plataforma. As portas se abrem.\n" +
                     "Lá dentro, três assentos estão iluminados e um quarto permanece completamente escuro.")
-            
+
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Entrar com Ibis primeiro — afinidadeP1 +4, confiança +1.
-    // Escolha B: Mandar Deyv entrar primeiro — afinidadeP2 -2, liderança +2, confiança +1.
-
 
     // CAPÍTULO 3 - CENA 2
     public static Dialogo[] cap3cen2 = {
@@ -254,11 +212,6 @@ public class RepDialogo {
                     "Por um instante, sente que alguma parte de si ficou olhando para o reflexo mesmo depois de desviar o rosto.")
 
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Reforçar Ibis e afastá-lo da janela — afinidadeP1 +4, carisma +2, resistênciaMental +1.
-    // Escolha B: Perguntar a Deyv sobre a visão — afinidadeP2 +4, confiança +2, resistênciaMental -1.
-
 
     // CAPÍTULO 3 - CENA 3
     public static Dialogo[] cap3cen3 = {
@@ -282,11 +235,6 @@ public class RepDialogo {
 
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Contar imediatamente a Ibis o que foi descoberto — afinidadeP1 +5, confiança +1.
-    // Escolha B: Guardar a informação por enquanto — liderança +2, confiança -2.
-
-
     // CAPÍTULO 3 - CENA
     public static Dialogo[] cap3cen4 = {
 
@@ -308,14 +256,6 @@ public class RepDialogo {
             )
 
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Acreditar em Mikhail — confiança +3, resistênciaMental +2, liderança +1.
-    // Escolha B: Acreditar na falsa saída — liderança +2, resistênciaMental -4, afinidadeP1 -3, afinidadeP2 -3.
-    // Escolha para item.
-    // Item 05: Medalhão rachado — resistênciaMental +3.
-    // Item 06: Mapa subterrâneo — liderança +2, confiança +1.
-
 
     // CAPÍTULO 4 - CENA 1
     public static Dialogo[] cap4cen1 = {
@@ -340,11 +280,6 @@ public class RepDialogo {
 
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Serj mantém o grupo unido e segue Elena — liderança +3, afinidadeP1 +2, confiança +1.
-    // Escolha B: Separar o grupo para investigar — liderança -2, resistênciaMental -2, confiança -2.
-
-
     // CAPÍTULO 4 - CENA 2
     public static Dialogo[] cap4cen2 = {
 
@@ -364,11 +299,6 @@ public class RepDialogo {
             new Dialogo("ELENA", "Porque o lugar foi construído para nunca ficar vazio.")
 
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Perguntar a Elena como evitar o sacrifício — confiança +3, carisma +2, resistênciaMental +1.
-    // Escolha B: Pressionar Deyv por respostas — afinidadeP2 +4, confiança +1, afinidadeP1 -2.
-
 
     // CAPÍTULO 4 - CENA 3
     public static Dialogo[] cap4cen3 = {
@@ -390,11 +320,6 @@ public class RepDialogo {
             new Dialogo("DEYV", "Eu escolhi a porta errada.")
 
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Perdoar Deyv e continuar ouvindo — afinidadeP2 +6, confiança +3.
-    // Escolha B: Afastar Deyv do grupo — afinidadeP2 -5, liderança +3, afinidadeP1 +2.
-
 
     // CAPÍTULO 4 - CENA 4
     public static Dialogo[] cap4cen4 = {
@@ -418,14 +343,6 @@ public class RepDialogo {
 
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Segurar Ibis e Deyv juntos antes de descer — afinidadeP1 +3, afinidadeP2 +3, carisma +2.
-    // Escolha B: Descer primeiro e assumir o risco — liderança +4, confiança +1, resistênciaMental -1.
-    // Escolha para item.
-    // Item 07: Símbolo de três lados — confiança +2, liderança +1.
-    // Item 08: Fotografia de 2006 — carisma +2, afinidadeP1 +1, afinidadeP2 +1.
-
-
     // CAPÍTULO 5 - CENA 1
     public static Dialogo[] cap5cen1 = {
 
@@ -448,12 +365,6 @@ public class RepDialogo {
 
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Avançar junto com Ibis — afinidadeP1 +4, carisma +1, confiança +1.
-    // Escolha B: Avançar junto com Deyv — afinidadeP2 +4, confiança +2.
-    // Escolha C: Avançar sozinho — liderança +4, resistênciaMental -2.
-
-
     // CAPÍTULO 5 - CENA 2
     public static Dialogo[] cap5cen2 = {
 
@@ -475,11 +386,6 @@ public class RepDialogo {
 
     };
 
-    // Pode haver uma escolha.
-    // Escolha A: Exigir outra solução — liderança +3, confiança +2, resistênciaMental -1.
-    // Escolha B: Perguntar o que acontece com quem fica — carisma +2, confiança +3.
-
-
     // CAPÍTULO 5 - CENA 3
     public static Dialogo[] cap5cen3 = {
 
@@ -498,12 +404,6 @@ public class RepDialogo {
                     "As memórias, os objetos e os corredores do lugar se desfazem como cinzas.")
 
     };
-
-    // Pode haver uma escolha.
-    // Escolha A: Escolher Ibis para atravessar — afinidadeP1 +5, liderança +2, confiança -2.
-    // Escolha B: Escolher Deyv para atravessar — afinidadeP2 +5, confiança +2, afinidadeP1 -4.
-    // Escolha C: Recusar a escolha e procurar outra passagem — liderança +4, resistênciaMental -3, confiança +1.
-
 
     // CAPÍTULO 5 - CENA 4
     public static Dialogo[] cap5cen4 = {

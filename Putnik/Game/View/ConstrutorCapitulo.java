@@ -1,5 +1,4 @@
 package View;
-
 import Model.Dialogo;
 import Model.RepDialogo;
 
